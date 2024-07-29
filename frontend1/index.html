@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="reminder-app">
+        <h1>Time Reminder</h1>
+        <form id="reminderForm">
+            <div class="form-group">
+                <label for="taskName">Reminder/Task Name:</label>
+                <input type="text" id="taskName" name="taskName" placeholder="Enter task name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Enter description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location" required>
+            </div>
+            <div class="form-group">
+                <label for="startTime">Start Time:</label>
+                <input type="datetime-local" id="startTime" name="startTime" required>
+            </div>
+            <div class="form-group">
+                <label for="endTime">End Time:</label>
+                <input type="datetime-local" id="endTime" name="endTime" required>
+            </div>
+            <button type="submit">Add Reminder</button>
+        </form>
+
+        <h2>Reminders</h2>
+        <ul id="reminderList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
